@@ -5,7 +5,7 @@ let currentTab: any;
 browser.tabs.query({
   active: true,
   currentWindow: true
-}).then(tabs => currentTab )
+}).then(tabs => currentTab = tabs[0] )
 
 export const Popup = () => {
   const handleCats = () => {

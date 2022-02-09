@@ -33,7 +33,9 @@ declare let window: CustomWindow
 
     if (url) {
       var images = document.getElementsByTagName("img");
-      // update images
+      for (var i = 0; i < images.length; i++) {
+        images[i].src = url;
+      }
     }
   })
 })();
